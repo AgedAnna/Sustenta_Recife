@@ -26,8 +26,8 @@ logo {
   }
 
   .logo img {
-    width: 60px; /* Defina o tamanho desejado para a imagem */
-    margin-right: 5px; /* Adicione um espaçamento entre a imagem e o texto, se necessário */
+    width: 60px; 
+    margin-right: 5px;
   }
 
 html{

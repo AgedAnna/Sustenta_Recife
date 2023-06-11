@@ -30,23 +30,20 @@ $(document).ready(function(){
   });
 
   function enviarEmail() {
-    // Recupera os valores dos campos do formulário
+    
     var firstName = document.getElementById("firstName").value;
     var lastName = document.getElementById("lastName").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
   
-    // Constrói o corpo do email
     var body = "Nome: " + firstName + " " + lastName + "\n";
     body += "Email: " + email + "\n\n";
     body += "Mensagem: \n" + message;
   
-    // Monta o link de envio de email
     var subject = "Contato via site - Sustenta Recife";
     var mailtoLink = "mailto:annabeatryz12345@gmail.com" +
                      "?subject=" + encodeURIComponent(subject) +
                      "&body=" + encodeURIComponent(body);
   
-    // Abre o cliente de email padrão do usuário com os campos preenchidos
     window.location.href = mailtoLink;
   }
